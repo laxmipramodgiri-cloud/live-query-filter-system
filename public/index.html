@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Query Filter System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Live Query Filter System</h1>
+    <p class="subtitle">Search, filter and explore products</p>
+
+    <!-- Search -->
+    <div class="search-box">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search products..."
+      >
+    </div>
+
+    <!-- Categories -->
+    <div class="filters">
+      <h3>Categories</h3>
+
+      <label>
+        <input type="checkbox" value="Electronics" class="category">
+        Electronics
+      </label>
+
+      <label>
+        <input type="checkbox" value="Clothing" class="category">
+        Clothing
+      </label>
+
+      <label>
+        <input type="checkbox" value="Footwear" class="category">
+        Footwear
+      </label>
+
+      <label>
+        <input type="checkbox" value="Accessories" class="category">
+        Accessories
+      </label>
+    </div>
+
+    <!-- Loading -->
+    <div id="loading" class="loading">
+      Loading products...
+    </div>
+
+    <!-- Products -->
+    <div id="productGrid" class="product-grid"></div>
+
+    <!-- Pagination -->
+    <div class="pagination">
+      <button id="prevBtn">Previous</button>
+      <span id="pageInfo">Page 1</span>
+      <button id="nextBtn">Next</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
